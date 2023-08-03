@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+#root {
+    height: 100%;
+}
+
+.App {
+    height: 100%;
+    overflow: auto;
+    background-color: 'white';
+    font-family: 'PT Sans', 'Trebuchet MS';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+.dropdown {
+    animation: fade 0.3s linear forwards;
+}
+
+.main-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper {
+    display: flex;
+    flex: 1;
+    min-height: 0px;
+}
+
+@media only screen and (min-width: 900px) {
+    .content-wrapper-maxWidth {
+        width: 50%;
+        align-self: center;
+    }
+}
+
+.overflow-container {
+    flex: 1;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.marker {
+    width: 0;
+    height: 0;
+}
+
+.marker span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    background-color: #fff;
+    border-radius: 0 70% 70%;
+    box-shadow: 0 0 2px #000;
+    cursor: pointer;
+    transform-origin: 0 0;
+    transform: rotateZ(-135deg);
+}
+
+.marker:hover {
+    display: pointer;
+}
+
+.float {
+    position: fixed;
+}
+
+.spin {
+    animation-name: spin;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.alertContainer {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    justify-content: center;
+}
+@media only screen and (min-width: 900px) {
+    .alertContainer {
+        width: 50%;
+    }
+}
+
+.overlayBottom {
+    position: fixed;
+    z-index: 1;
+    bottom: 10%;
+    animation: shake 0.5s;
+}
+
+.overlayTop {
+    position: fixed;
+    z-index: 1;
+    top: 10%;
+    animation: shake 0.5s;
+}
+
+.fadeIn {
+    animation: fadeIn 0.3s;
+    -webkit-animation: fadeIn 0.3s;
+    -moz-animation: fadeIn 0.3s;
+    -o-animation: fadeIn 0.3s;
+    -ms-animation: fadeIn 0.3s;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
