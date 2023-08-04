@@ -25,16 +25,6 @@ export default function SearchbarLeaderboards({ classes }) {
                 setOpen={setViewOpen}
                 keyName="leaderboardOptions"
             />
-            <IconButton
-                className={classes.wrapIconLeft}
-                color="inherit"
-                onClick={() => setViewOpen(true)}
-            >
-                <VisibilityIcon
-                    className={classes.icon}
-                    style={{ color: Color.coreTheme }}
-                />
-            </IconButton>
             <div
                 style={{
                     width: '100%',
@@ -47,16 +37,6 @@ export default function SearchbarLeaderboards({ classes }) {
                 <p>This Week (June 30 - Aug 5)</p>
                 <ChevronRightIcon />
             </div>
-            <IconButton
-                className={classes.wrapIconRight}
-                aria-label="show 4 new mails"
-                color="inherit"
-                onClick={() => setFilterOpen(true)}
-            >
-                <Icon>
-                    <img src={'./icons/filter.svg'} />
-                </Icon>
-            </IconButton>
         </>
     )
 }

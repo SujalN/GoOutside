@@ -10,7 +10,6 @@ import Question from './ModalContent/Question'
 import SettingsForm from './ModalContent/SettingsForm'
 import CalendarForm from './ModalContent/CalendarForm'
 import ChangePasswordForm from './ModalContent/ChangePasswordForm'
-import FilterForm from './ModalContent/FilterForm'
 import SortForm from './ModalContent/SortForm'
 import MapLayersForm from './ModalContent/MapLayersForm'
 import UnsavedChangesAlert from './ModalContent/UnsavedChangesAlert'
@@ -229,9 +228,6 @@ export default function CustomDialog({
         title = 'change password'
         content = <ChangePasswordForm setEditPasswordOpen={setOpen} />
         buttonOptions = 'noTop'
-    } else if (type === 'filter') {
-        title = 'filter'
-        content = <FilterForm keyName={keyName} />
     } else if (type === 'sort') {
         title = 'sort'
         content = <SortForm keyName={keyName} />

@@ -3,6 +3,12 @@
 
 #root {
     height: 100%;
+    --coral-pink: #de7f73ff;
+    --orange-pantone: #fb681cff;
+    --bittersweet-shimmer: #c24044ff;
+    --black: #000000ff;
+    --lavender-blush: #fbf1f6ff;
+    --silver: #c4c4c4ff;
 }
 
 .App {
@@ -192,3 +198,10 @@ p {
         opacity: 1;
     }
 }
+
+.leaderboard-section {
+    margin-top: 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }

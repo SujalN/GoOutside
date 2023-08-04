@@ -43,10 +43,10 @@ export default function LeaderboardBottom() {
             </Icon>
             <div className={classes.container}>
                 <p className={classes.biggerText}>
-                    You're in 2nd place with 9 points!
+                    You're in 2nd place with 480 points!
                 </p>
                 <p className={classes.smallerText}>
-                    9 points behind the next person
+                    20 points behind the next person
                 </p>
             </div>
         </div>

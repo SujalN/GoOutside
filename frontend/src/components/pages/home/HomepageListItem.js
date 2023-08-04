@@ -73,7 +73,7 @@ export default function HomepageListItem({ type, style }) {
     } else if (type === 'leaderboards') {
         title = 'leaderboards'
         iconSrc = './icons/trophy.svg'
-        primaryText = "You're in 2nd place with 28 points!"
+        primaryText = "You're in 2nd place with 480 points!"
         secondaryText = '9 points behind the next person.'
         targetPage = Page.leaderboards
     }

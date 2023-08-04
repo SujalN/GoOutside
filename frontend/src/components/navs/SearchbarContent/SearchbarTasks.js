@@ -33,16 +33,7 @@ export default function SearchbarTasks({ classes }) {
                     <img src={'./icons/sort.svg'} />
                 </Icon>
             </IconButton>
-            <IconButton
-                className={classes.wrapIconRight}
-                aria-label="show 4 new mails"
-                color="inherit"
-                onClick={() => setFilterOpen(true)}
-            >
-                <Icon>
-                    <img src={'./icons/filter.svg'} />
-                </Icon>
-            </IconButton>
+
         </>
     )
 }

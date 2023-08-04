@@ -111,25 +111,6 @@ export default function ProfileCard({ data }) {
                                 }}
                             />
                         </div>
-                        <div
-                            style={{
-                                width: '57px',
-                                height: '57px',
-                                backgroundColor: Color.accent,
-                                borderRadius: '50%',
-                                display: 'flex',
-                                flexDirection: 'column',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                            }}
-                        >
-                            <p style={{ fontSize: '14px', fontWeight: 'bold' }}>
-                                Lv
-                            </p>
-                            <p style={{ fontSize: '24px', fontWeight: 'bold' }}>
-                                {data.level}
-                            </p>
-                        </div>
                     </div>
                 </CardContent>
             </Card>

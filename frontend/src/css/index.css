@@ -5,8 +5,113 @@
 body {
     height: 100%;
     margin: 0;
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
 }
 html {
     height: 100vh;
     width: 100vw;
+}
+.circle {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(to bottom, var(--silver), var(--black));
+    border-radius: 50%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.indicator {
+    color: var(--orange-pantone);
+    margin-left: 1rem;
+}
+.header-section {
+    background-color: #e1f1ff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px;
+}
+.title {
+    text-align: center;
+    color: black;
+}
+.leader-items {
+    display: flex;
+    justify-content: center;
+}
+.header-item {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.header-item:nth-child(3) {
+    margin-top: 70px !important;
+}
+
+.header-item:nth-child(1) {
+    margin-top: 50px !important;
+}
+.header-leader-card {
+    color: black;
+    padding: 5px 15px;
+    font-size: 1;
+    position: relative;
+    top: -20px;
+}
+.header-leader-card .name {
+    display: block;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.ellipsis-crown {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transform: rotate(-15deg) !important;
+    background: linear-gradient(to bottom, var(--silver), var(--coral-pink));
+}
+.winner {
+    background: var(--silver) !important;
+    width: 70px;
+    height: 70px;
+    transform: rotate(-15deg) !important;
+}
+
+.second {
+    width: 60px;
+    height: 60px;
+}
+.crown-icon {
+    position: relative;
+    top: -10px;
+}
+.crown-icon img {
+    width: 40px;
+}
+.card {
+    background-color: #e1f1ff;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    color: black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.card .name {
+    flex: 1;
+    text-transform: none;
 }

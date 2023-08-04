@@ -135,11 +135,7 @@ export default function Profile() {
                 setOpen={setLogoutAlertOpen}
                 closeAll={closeAll}
             />
-            <div
-                style={{
-                    display: 'flex',
-                }}
-            >
+            <div>
                 <CustomButton
                     type="settings"
                     variant="secondary"
